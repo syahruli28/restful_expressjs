@@ -1,0 +1,34 @@
+1. jalankan mongo server dengan pergi ke path c:\data di shell/cmd, ketikkan 'mongod -dbpath .'
+2. pergi ke path file/folder projectnya di shell/cmd, ketikan 'nodemon index'
+
+
+### API Endpoint ###
+METHODNYA http:localhost:portnya/product
+
+cth :
+
+// melihat semua data
+GET http:localhost:3000/product
+
+
+// melihat satu data berdasarkan id
+GET http:localhost:3000/product/idnya
+
+// menambahkan data
+POST http:localhost:3000/product
+Content-Type: application/json
+{
+    "title": "Nama Produk",
+    "price": harga
+}
+
+// edit data berdasarkan id
+PATCH http:localhost:3000/product/idnya
+Content-Type: application/json
+{
+    "title": "Nama Produk",
+    "price": harga
+}
+
+// hapus satu data berdasarkan id
+DELETE http:localhost:3000/product/idnya
